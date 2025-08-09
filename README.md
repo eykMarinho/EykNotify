@@ -55,9 +55,10 @@ Constantes configuráveis em `EykNotify.inc`:
 
 ```pawn
 #define MAX_NOTIFICATIONS 5        // Máximo de notificações
-#define NOTIFICATION_WIDTH 50.0    // Espaçamento horizontal
-#define NOTIFICATION_START_X 350.0 // Posição X inicial
-#define NOTIFICATION_START_Y 313.0 // Posição Y
+
+static const NOTIFICATION_WIDTH = 50.0;    // Espaçamento horizontal
+static const  NOTIFICATION_START_X = 350.0; // Posição X inicial
+static const  NOTIFICATION_START_Y = 313.0; // Posição Y
 ```
 
 ## Compatibilidade
