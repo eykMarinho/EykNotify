@@ -2,7 +2,7 @@
 
 Sistema de notificações para SA-MP que exibe notificações de itens adicionados/removidos.
 
-##Video
+## Video
 
 https://youtu.be/ce0-eSJqPJU
 
