@@ -13,8 +13,9 @@ new PlayerText: NotifyModel[MAX_PLAYERS][MAX_NOTIFICATIONS];
 new PlayerText: NotifyColor[MAX_PLAYERS][MAX_NOTIFICATIONS];
 new PlayerText: NotifyText[MAX_PLAYERS][MAX_NOTIFICATIONS];
 new PlayerText: NotifyAmount[MAX_PLAYERS][MAX_NOTIFICATIONS];
-new bool: NotifySlotUsed[MAX_PLAYERS][MAX_NOTIFICATIONS];
-new NotifyTimer[MAX_PLAYERS][MAX_NOTIFICATIONS];
+
+static bool: NotifySlotUsed[MAX_PLAYERS][MAX_NOTIFICATIONS];
+static NotifyTimer[MAX_PLAYERS][MAX_NOTIFICATIONS];
 
 stock CreateNotification(playerid, model, bool:isGreen, bool:isAdded, amount) {
     new slot = GetFreeNotificationSlot(playerid);
@@ -137,5 +138,6 @@ public OnPlayerDisconnect(playerid, reason) {
 #if defined EykNotify_OnPlayerDisconnect
     forward EykNotify_OnPlayerDisconnect(playerid, reason);
 #endif
+
 
 
