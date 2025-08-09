@@ -40,7 +40,7 @@ stock CreateNotification(playerid, model, bool:isGreen, bool:isAdded, amount) {
     NotifyColor[playerid][slot] = CreatePlayerTextDraw(playerid, xPos - 8.0, yPos, "LD_SPAC:white");
     PlayerTextDrawTextSize(playerid, NotifyColor[playerid][slot], 31.0, 8.0);
     PlayerTextDrawAlignment(playerid, NotifyColor[playerid][slot], 1);
-    PlayerTextDrawColor(playerid, NotifyColor[playerid][slot], isGreen ? 0x00FF00FF : 0xFF0000FF);
+    PlayerTextDrawColor(playerid, NotifyColor[playerid][slot], isGreen ? 0x228B22FF : 0x800000FF);
     PlayerTextDrawSetShadow(playerid, NotifyColor[playerid][slot], 0);
     PlayerTextDrawSetOutline(playerid, NotifyColor[playerid][slot], 0);
     PlayerTextDrawBackgroundColor(playerid, NotifyColor[playerid][slot], 255);
@@ -137,4 +137,5 @@ public OnPlayerDisconnect(playerid, reason) {
 #if defined EykNotify_OnPlayerDisconnect
     forward EykNotify_OnPlayerDisconnect(playerid, reason);
 #endif
+
 
