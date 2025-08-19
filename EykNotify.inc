@@ -1,3 +1,5 @@
+#include <a_samp>
+
 #if defined _EykNotify_included
     #endinput
 #endif
@@ -138,6 +140,7 @@ public OnPlayerDisconnect(playerid, reason) {
 #if defined EykNotify_OnPlayerDisconnect
     forward EykNotify_OnPlayerDisconnect(playerid, reason);
 #endif
+
 
 
 
